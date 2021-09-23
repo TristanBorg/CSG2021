@@ -12,5 +12,6 @@ body {
 }
 
 p {
-    color: white;
+    color: black;
+    background-color: orange;
 }
