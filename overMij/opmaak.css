@@ -1,11 +1,9 @@
-* {
-    border: 5px solid white;
-}
+
 
 h1 {
     text-align: center;
 color: black;
-background-color:white;
+background-color:green;
 font-family: sans-serif;
 font-size: 50px;
 }
@@ -14,25 +12,35 @@ body {
     background-image: url("https://i.gifer.com/76YS.gif");
 }
 
+
 p {
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: green;
     font-family: cursive;
     font-size: 25px;
     
 }
 
 table {
-    color:blanchedalmond;
+    color: white;
     background-color: black;
-    border-color:black;
+    border: 2px solid green;
     width: 1000px; height: 200px;
 }
 
+th {
+    border: 2px solid green;
+}
 td {
     text-align: center;
+    border: 2px solid green;
 }
 
 img {
     border-color: black;
+}
+
+a {
+    color: whitesmoke;
+
 }
