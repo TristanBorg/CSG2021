@@ -1,15 +1,41 @@
 <!DOCTYPE html>
 <html lang="nl">
     <head>
-        <meta charset="utf-8">
-        <title>titel</title>
         <link rel="stylesheet" href="css/vormgeving.css">
     </head>
     <body>
+        <div id="menuachter">
+            <a>
+                <nav id='menu'>
+                    <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+                    <ul>
+                      <li><a href='http://'>Home</a></li>
+                      <li><a class='dropdown-arrow' href='http://'>Products</a>
+                        <ul class='sub-menus'>
+                          <li><a href='http://'>Products Sub Menu 1</a></li>
+                          <li><a href='http://'>Products Sub Menu 2</a></li>
+                          <li><a href='http://'>Products Sub Menu 3</a></li>
+                          <li><a href='http://'>Products Sub Menu 4</a></li>
+                        </ul>
+                      </li>
+                      <li><a href='http://'>About</a></li>
+                      <li><a class='dropdown-arrow' href='http://'>Services</a>
+                        <ul class='sub-menus'>
+                          <li><a href='http://'>Services Sub Menu 1</a></li>
+                          <li><a href='http://'>Services Sub Menu 2</a></li>
+                          <li><a href='http://'>Services Sub Menu 3</a></li>
+                        </ul>
+                      </li>
+                      <li><a href='http://'>Contact Us</a></li>
+                    </ul>
+                  </nav>
+            </a>
+        </div>
         <div id="container">
-            <h1>startpagina PO</h1>
-            <img src="https://www.plakfoliewebshop.nl/Files/10/180000/180418/ProductPhotos/MaxContent/1145270256.jpg" id="vogel" alt="dierentuinvogel"/>
-            <p>Hier maak je straks je PO.</p>
+            <div id="content"></div>
+        </div>
+
+
         </div>
     </body>
 </html>
