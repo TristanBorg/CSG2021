@@ -58,6 +58,17 @@ div{
 	color: #CC241F;
 }
 
+.lokilinks{ 
+	width: 46%;
+    Height: 100%;
+    background-color: green;
+}
+
+.lokiRechts{
+    width: 54%;
+    Height: 100%;
+    background-color: goldenrod;
+}
 #container {
     width: 80%;
     Height: 100%;
