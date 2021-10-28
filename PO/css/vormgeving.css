@@ -22,6 +22,7 @@ body {
 	color: white;
 	font-family: 'Comfortaa', cursive; 
 }
+
 .startlinks{
 	width: 70%;
     Height: 100%;
@@ -44,7 +45,7 @@ body {
 	margin-right: auto;
   }
 
-  .Ccontainer {
+.Ccontainer {
 	width: 100%;
     Height: 100%;
     background-color: white;
@@ -77,14 +78,15 @@ body {
     grid-row-end: 10;
  }
 
- .ch1 {
+.ch1 {
 	grid-column-start: 4;
     grid-column-end: 8;
     grid-row-start: 6;
     grid-row-end: 8;
 	padding-top: 50px;
  }
- .ch12 {
+
+.ch12 {
 	grid-column-start: 4;
     grid-column-end: 8;
     grid-row-start: 2;
@@ -92,7 +94,7 @@ body {
 	padding-top: 45px;
  }
 
- .ch13 {
+.ch13 {
 	grid-column-start: 4;
     grid-column-end: 8;
     grid-row-start: 1;
@@ -217,12 +219,13 @@ body {
 	background: #D4BA15;
 	background: linear-gradient(to top, rgb(243, 194, 0), #CF0C0C);
   }
-  .testbutton:hover {
+
+.testbutton:hover {
 	color: #000000 !important;
 	background: #CFCFCF;
   }
 
-  .lbutton {
+.lbutton {
 	font-family: arial;
 	color: #000000 !important;
 	font-size: 14px;
@@ -234,12 +237,13 @@ body {
 	background: #D0D636;
 	background: linear-gradient(to top, #D0D636, #258C1D);
   }
-  .lbutton:hover {
+
+ .lbutton:hover {
 	color: #000000 !important;
 	background: #FFFFFF;
   }
 
-  .Cbutton {
+.Cbutton {
 	font-family: arial;
 	color: silver !important;
 	font-size: 14px;
@@ -251,12 +255,13 @@ body {
 	background: #D4BA15;
 	background: linear-gradient(to top, #000d58fa, rgb(167, 14, 9));
   }
-  .Cbutton:hover {
+
+ .Cbutton:hover {
 	color: #000000 !important;
 	background: #CFCFCF;
   }
 
-  .Ebutton {
+.Ebutton {
 	font-family: arial;
 	color: #000000 !important;
 	font-size: 14px;
@@ -269,55 +274,64 @@ body {
 	background: linear-gradient(to top, green, goldenrod);
   }
 
-  .Ebutton:hover {
+.Ebutton:hover {
 	color: #000000 !important;
 	background: #CFCFCF;
   }
 
-  .uitleg {
-	  display: absolute;
-	  height: 300px;
-	  width: 150px;
-  }
+
 
 #menu {
-	background: #0099CC;
 	background: linear-gradient(to bottom,  #CC241F,  #E3CA27);
 	color: #FFF;
 	height: 75px;
     width: 80%;
     margin-left: 10%;
-}
+	/* dit stuk heb ik gekopieerd uitleg: gradient background betekend in elkaar overlopend in dit geval rood loopt over in geel, color is kleur tekst, hoogte menu is 75pixels, breedte 80% van de pagina, er zit een marge aan de linker kant van 10% van de pagina */
+} 
+
 #menu ul, #menu li {
 	margin: 0 auto;
 	padding: 0;
 	list-style: none;
+	/* dit stuk heb ik gekopieerd uitleg: margin tussen de in de lijst staande dingen is 0px, de padding is ook 0px, er is geen list style dus er komen geen puntjes voor elk menu */
 }
+
 #menu ul {
 	width: 100%;
-    margin-left: 69%;
+    margin-left: 30%;
+	/* dit stuk heb ik gekopieerd uitleg: breedte en margin left spreken voorzich */
 }
+
 #menu li {
 	float: left;
 	display: inline;
-	position:relative;
+	position: relative;
+	/* dit stuk heb ik gekopieerd uitleg: float brengt de menus naar links totaan de margin van 30%, display inline laat het mogelijk zijn om tekst in de menus te laten zien, de position zet hem op de plek naast de margin ook wel de statische plek genoemd */
 }
+
 #menu a {
 	display: block;
 	line-height: 69px;
 	padding: 0 14px;
 	text-decoration: none;
-	color: #FFFFFF;
+	color: white;
 	font-size: 16px;
+	/* dit stuk heb ik gekopieerd uitleg: display block betekend op een bepaalde regel zo vermogelijk naar de rechtekant na de margin todat hij bij het einde is van de totale width, lijn heigth laat de totale hoogte zien van de lijn (het menu van bijv: contact us) waarin de teksts kan staan, text decoration none zorgt ervoor dat er geen lijnen onder de tekst van een menutje staan, kleur en font size van de text is dus wit en 16px hoog */
 }
+
 #menu a.dropdown-arrow:after {
 	content: "\25BE";
 	margin-left: 5px;
+	/* dit stuk heb ik gekopieerd uitleg: content laat me sub-menus eronder toevoegen en door de links naar de andere html pagina's gaan nadat er op wordt geklikt, de submenus staan 5 pixels opzij door de margin left */
 }
+
 #menu li a:hover {
 	color: #0099CC;
 	background: #F2F2F2;
+	/* dit stuk heb ik gekopieerd uitleg: als je over een van de menus heen gaat met je muis veranderd de tekst van kleur namelijk blauw, achtergrond van het desbetreffende veranderd dan in het wit */
 }
+
 #menu input {
 	display: none;
 	margin: 0;
@@ -335,21 +349,29 @@ body {
 	width: 170px;
 	background: #444444;
 	position: absolute;
-	z-index: 99;
 	display: none;
+	/* dit stuk heb ik gekopieerd uitleg: sub-menu's zijn de menus die tevoorschijn komen als je muis op het menu erboven staat, height past hij automatisch aan aan het menu boven hem. de overflow hidden zorgt ervoor dat alle tekst die te lang is niet getoond wordt, width is hoe breed het submenu is background is de kleur van achtergrond, position absolute betekend dat het sub menu recht onder de parent gaat staan in dit geval dus onder dat menu, display none laat hem ozichtbaar zijn todat je met je muis op het debetreffende menu gaat staan */
 }
+
 #menu ul.sub-menus li {
 	display: block;
 	width: 100%;
+	/* dit stuk heb ik gekopieerd uitleg: de sub-menu's staan onder elkaar door display block  dit betekend op een bepaalde rij zo vermogelijk van links naar rechts tot einde van de width dus niet verder als de groote van het menutje zelf */
 }
+
 #menu ul.sub-menus a {
 	color: #FFFFFF;
 	font-size: 18px;
+	/* dit stuk heb ik gekopieerd uitleg: de kleur en grotte van de tekst in de sub-menu's*/
 }
+
 #menu li:hover ul.sub-menus {
 	display: block
+	/* dit stuk heb ik gekopieerd uitleg: de display laat zien waar de sub-menus moeten staan in dit geval block betekend dat het op een nieuwe regel begint */
 }
+
 #menu ul.sub-menus a:hover{
 	background: #F2F2F2;
 	color: #444444;
+	/* dit stuk heb ik gekopieerd uitleg: wat hier word bedoeld is dat wanneer je over één van de sub menus heen gaat de achtergrondkleur en de kleur van de tekst veranderen */
 }
